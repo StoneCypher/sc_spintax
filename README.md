@@ -34,8 +34,9 @@ So for example, I kind of want to use this to do video game dialogue.
 
 
 
-Other implementations
----------------------
+Other implementations and explanations
+--------------------------------------
 
 * [NPM Spintax](https://npmjs.org/package/spintax)
 * [Spin Rewriter](http://www.spin-rewriter.com/)
+* [YouTube Tutorial](http://www.youtube.com/watch?v=4O59LVcM4H8)

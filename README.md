@@ -1,7 +1,7 @@
 sc_spintax
 ==========
 
-Simple implementation of "spintax," a text generation mechanism often abused for spam
+Simple implementation of "spintax," a text generation mechanism often abused for text farms and spam
 
 
 
@@ -29,3 +29,13 @@ What?  Lol, no.
 &hellip; but this one could be.
 
 So for example, I kind of want to use this to do video game dialogue.
+
+#todo example whargarbl
+
+
+
+Other implementations
+---------------------
+
+* [NPM Spintax](https://npmjs.org/package/spintax)
+* [Spin Rewriter](http://www.spin-rewriter.com/)

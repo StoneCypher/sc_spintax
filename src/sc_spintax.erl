@@ -12,11 +12,19 @@
 
     parse_dive/1,
 
-    gen_from/1
+    gen_from/1,
+
+    test/0
 
 %   every/1
 
 ]).
+
+
+
+
+
+-include_lib("eunit/include/eunit.hrl").
 
 
 
@@ -110,7 +118,7 @@ pack(Work, Stack) ->
 
 parse_dive([], Work, Stack) ->
 
-    lists:reverse(pack(Work, Stack));
+    list_to_tuple(lists:reverse(pack(Work, Stack)));
 
 
 
@@ -136,7 +144,7 @@ parse_dive("|" ++ Continue, Work, Stack) ->
 
 parse_dive("}" ++ Continue, Work, Stack) ->
 
-    {list_to_tuple(lists:reverse(pack(Work,Stack))), Continue};
+    {lists:reverse(pack(Work,Stack)), Continue};
 
 
 
@@ -145,3 +153,13 @@ parse_dive("}" ++ Continue, Work, Stack) ->
 parse_dive([Letter|Continue], Work, Stack) ->
 
     parse_dive(Continue, [Letter]++Work, Stack).
+
+
+
+
+
+-spec test() -> ok | error.
+
+test() ->
+
+    eunit:test(sc_spintax).

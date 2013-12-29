@@ -108,51 +108,9 @@ parse_dive(Text) ->
 
 
 
-pack(Work, Stack) ->
+parse_dive(Text, Work, OutStack) ->
 
-    [ Item || Item <- [clean(lists:reverse(Work))] ++ Stack, Item =/= <<>> ].
-
-
-
-
-
-parse_dive([], Work, Stack) ->
-
-    list_to_tuple(lists:reverse(pack(Work, Stack)));
-
-
-
-
-
-parse_dive("{" ++ Continue, Work, Stack) ->
-
-    { Res, Rem } = parse_dive(Continue),
-
-    parse_dive(Rem, [], [Res] ++ pack(Work,Stack) );
-
-
-
-
-
-parse_dive("|" ++ Continue, Work, Stack) ->
-
-    parse_dive(Continue, [], pack(Work,Stack) );
-
-
-
-
-
-parse_dive("}" ++ Continue, Work, Stack) ->
-
-    {lists:reverse(pack(Work,Stack)), Continue};
-
-
-
-
-
-parse_dive([Letter|Continue], Work, Stack) ->
-
-    parse_dive(Continue, [Letter]++Work, Stack).
+    "todo".
 
 
 

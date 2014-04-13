@@ -5,6 +5,16 @@ Simple implementation of "spintax," a text generation mechanism often abused for
 
 
 
+
+
+Current Library Status: *broken*
+--------------------------------------------
+
+Not ready for use
+
+
+
+
 Text farms and spam?  Srsly?
 ----------------------------
 

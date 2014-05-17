@@ -50,3 +50,12 @@ Other implementations and explanations
 * [NPM Spintax](https://npmjs.org/package/spintax)
 * [Spin Rewriter](http://www.spin-rewriter.com/)
 * [YouTube Tutorial](http://www.youtube.com/watch?v=4O59LVcM4H8)
+
+
+
+
+
+Polemic :neckbeard:
+-------------------
+
+`sc_spintax` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
